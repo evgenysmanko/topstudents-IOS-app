@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		963F707422327EAA0049D85E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F707322327EAA0049D85E /* AppDelegate.swift */; };
-		963F707622327EAA0049D85E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F707522327EAA0049D85E /* ViewController.swift */; };
+		963F707622327EAA0049D85E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F707522327EAA0049D85E /* OnboardingViewController.swift */; };
 		963F707922327EAA0049D85E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963F707722327EAA0049D85E /* Main.storyboard */; };
 		963F707B22327EAB0049D85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963F707A22327EAB0049D85E /* Assets.xcassets */; };
 		963F707E22327EAB0049D85E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963F707C22327EAB0049D85E /* LaunchScreen.storyboard */; };
@@ -16,12 +16,14 @@
 		963F7098223287D20049D85E /* Collection+IsNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F7097223287D20049D85E /* Collection+IsNotEmpty.swift */; };
 		963F709D223288C70049D85E /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F709C223288C70049D85E /* LocalizedStrings.swift */; };
 		963F709F22328CA20049D85E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F709E22328CA20049D85E /* Assets.swift */; };
+		963F70A3223293670049D85E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963F70A1223293670049D85E /* ObjectMapper.framework */; };
+		963F70A4223293670049D85E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963F70A2223293670049D85E /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		963F707022327EAA0049D85E /* moscowStudents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moscowStudents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		963F707322327EAA0049D85E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		963F707522327EAA0049D85E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		963F707522327EAA0049D85E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		963F707822327EAA0049D85E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		963F707A22327EAB0049D85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		963F707D22327EAB0049D85E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		963F7097223287D20049D85E /* Collection+IsNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+IsNotEmpty.swift"; sourceTree = "<group>"; };
 		963F709C223288C70049D85E /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		963F709E22328CA20049D85E /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		963F70A1223293670049D85E /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		963F70A2223293670049D85E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963F70A4223293670049D85E /* Alamofire.framework in Frameworks */,
+				963F70A3223293670049D85E /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +54,7 @@
 			children = (
 				963F707222327EAA0049D85E /* moscowStudents */,
 				963F707122327EAA0049D85E /* Products */,
+				963F70A0223293670049D85E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,7 +123,7 @@
 		963F70942232878C0049D85E /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				963F707522327EAA0049D85E /* ViewController.swift */,
+				963F707522327EAA0049D85E /* OnboardingViewController.swift */,
 				963F707722327EAA0049D85E /* Main.storyboard */,
 			);
 			path = PresentationLayer;
@@ -156,6 +163,15 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		963F70A0223293670049D85E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				963F70A2223293670049D85E /* Alamofire.framework */,
+				963F70A1223293670049D85E /* ObjectMapper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +180,7 @@
 			buildConfigurationList = 963F708222327EAB0049D85E /* Build configuration list for PBXNativeTarget "moscowStudents" */;
 			buildPhases = (
 				963F709A2232885E0049D85E /* ShellScript */,
+				963F70A6223293760049D85E /* ShellScript */,
 				963F706C22327EAA0049D85E /* Sources */,
 				963F706D22327EAA0049D85E /* Frameworks */,
 				963F706E22327EAA0049D85E /* Resources */,
@@ -239,7 +256,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n    exit 1\nfi\n\nif which swiftgen >/dev/null; then\n    swiftgen\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+			shellScript = "# SwiftLint\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n    exit 1\nfi\n\n# SwiftGen\nif which swiftgen >/dev/null; then\n    swiftgen\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+		963F70A6223293760049D85E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -248,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963F707622327EAA0049D85E /* ViewController.swift in Sources */,
+				963F707622327EAA0049D85E /* OnboardingViewController.swift in Sources */,
 				963F707422327EAA0049D85E /* AppDelegate.swift in Sources */,
 				963F709D223288C70049D85E /* LocalizedStrings.swift in Sources */,
 				963F709F22328CA20049D85E /* Assets.swift in Sources */,
@@ -408,6 +446,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9Z8X7D82Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/moscowStudents/Configs/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,6 +469,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9Z8X7D82Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/moscowStudents/Configs/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
