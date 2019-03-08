@@ -1,0 +1,13 @@
+xcassets:
+  inputs: moscowStudents/Sources/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: moscowStudents/Sources/Core/Constants/Assets.swift
+
+strings:
+  inputs: moscowStudents/Sources/Resources/ru.lproj/Localizable.strings
+  outputs:
+    - templateName: flat-swift4
+      output: moscowStudents/Sources/Core/Constants/LocalizedStrings.swift
+      params:
+        enumName: LocalizedString
