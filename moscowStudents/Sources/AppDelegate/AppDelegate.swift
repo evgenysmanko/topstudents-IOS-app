@@ -17,14 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    VKDelegate.shared
+    VKDelegate.shared.configure()
     
     return true
   }
   
   func application(_ app: UIApplication,
                    open url: URL,
-                   options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+                   options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool { // swiftlint: disable
     let app = options[.sourceApplication] as? String
     VK.handle(url: url, sourceApplication: app)
     return true

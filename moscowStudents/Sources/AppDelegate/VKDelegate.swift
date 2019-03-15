@@ -12,10 +12,13 @@ final class VKDelegate: SwiftyVKDelegate {
   
   static let shared = VKDelegate()
   
-  let appId = "4994842"
-  let scopes: Scopes = [.messages, .offline, .friends, .wall, .photos, .audio, .video, .docs, .market, .email]
+  private let appId = "4994842"
+  private let scopes: Scopes = [.messages, .offline, .friends, .wall,
+                                .photos, .audio, .video, .docs, .market, .email]
   
-  private init() {
+  private init() { }
+  
+  func configure() {
     VK.setUp(appId: "", delegate: self)
   }
   
@@ -32,11 +35,11 @@ final class VKDelegate: SwiftyVKDelegate {
 //    }
   }
   
-  func vkTokenCreated(for sessionId: String, info: [String : String]) {
+  func vkTokenCreated(for sessionId: String, info: [String: String]) {
     print("token created in session \(sessionId) with info \(info)")
   }
   
-  func vkTokenUpdated(for sessionId: String, info: [String : String]) {
+  func vkTokenUpdated(for sessionId: String, info: [String: String]) {
     print("token updated in session \(sessionId) with info \(info)")
   }
   

@@ -24,6 +24,7 @@
 		9B29BBF0223C2EF20013357C /* SwiftyVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29BBED223C2EF20013357C /* SwiftyVK.framework */; };
 		9B29BBF1223C2EF20013357C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29BBEE223C2EF20013357C /* RxSwift.framework */; };
 		9B29BBF3223C30880013357C /* VKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29BBF2223C30880013357C /* VKDelegate.swift */; };
+		9B29BBF6223C34150013357C /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29BBF5223C34150013357C /* ViewModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		9B29BBED223C2EF20013357C /* SwiftyVK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyVK.framework; path = Carthage/Build/iOS/SwiftyVK.framework; sourceTree = "<group>"; };
 		9B29BBEE223C2EF20013357C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		9B29BBF2223C30880013357C /* VKDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKDelegate.swift; sourceTree = "<group>"; };
+		9B29BBF5223C34150013357C /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				963F709B223288B60049D85E /* Constants */,
 				963F7096223287BD0049D85E /* Extensions */,
+				9B29BBF7223C39800013357C /* Helpers */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -217,6 +220,14 @@
 				9B29BBE6223C25B90013357C /* LoginVKViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9B29BBF7223C39800013357C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9B29BBF5223C34150013357C /* ViewModelType.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +358,7 @@
 				963F709F22328CA20049D85E /* Assets.swift in Sources */,
 				963F7098223287D20049D85E /* Collection+IsNotEmpty.swift in Sources */,
 				9B29BBF3223C30880013357C /* VKDelegate.swift in Sources */,
+				9B29BBF6223C34150013357C /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

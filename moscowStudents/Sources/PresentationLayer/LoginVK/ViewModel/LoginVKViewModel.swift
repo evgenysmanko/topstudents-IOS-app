@@ -6,4 +6,24 @@
 //  Copyright © 2019 Владислав Игнатьев. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+import RxCocoa
+
+final class LoginVKViewModel {
+  
+  private let disposeBag = DisposeBag()
+  
+}
+
+// MARK: - ViewModelType
+extension LoginVKViewModel: ViewModelType {
+  
+  struct Input { }
+  
+  struct Output { }
+  
+  func transform(input: Input) -> Output {
+    return Output()
+  }
+  
+}

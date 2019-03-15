@@ -6,4 +6,11 @@
 //  Copyright © 2019 Владислав Игнатьев. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+import RxCocoa
+
+final class LoginVKModel {
+  
+  private let disposeBag = DisposeBag()
+  
+}
