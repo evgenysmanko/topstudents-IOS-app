@@ -15,7 +15,6 @@ opt_in_rules:
   - operator_usage_whitespace
   - private_outlet
   - redundant_nil_coalescing
-  - sorted_imports
   - switch_case_on_newline
 
 class_delegate_protocol:

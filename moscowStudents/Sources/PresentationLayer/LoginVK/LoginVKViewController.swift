@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginVKViewController.swift
 //  moscowStudents
 //
 //  Created by Владислав Игнатьев on 08/03/2019.
@@ -8,5 +8,5 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class LoginVKViewController: UIViewController {
 }

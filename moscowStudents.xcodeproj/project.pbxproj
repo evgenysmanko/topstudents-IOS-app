@@ -17,7 +17,13 @@
 		963F709F22328CA20049D85E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F709E22328CA20049D85E /* Assets.swift */; };
 		963F70A3223293670049D85E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963F70A1223293670049D85E /* ObjectMapper.framework */; };
 		963F70A4223293670049D85E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963F70A2223293670049D85E /* Alamofire.framework */; };
-		9B29BBDF223C245E0013357C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29BBDE223C245E0013357C /* ViewController.swift */; };
+		9B29BBDF223C245E0013357C /* LoginVKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29BBDE223C245E0013357C /* LoginVKViewController.swift */; };
+		9B29BBE7223C25B90013357C /* LoginVKViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29BBE6223C25B90013357C /* LoginVKViewModel.swift */; };
+		9B29BBE9223C25DF0013357C /* LoginVKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29BBE8223C25DF0013357C /* LoginVKModel.swift */; };
+		9B29BBEF223C2EF20013357C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29BBEC223C2EF20013357C /* RxCocoa.framework */; };
+		9B29BBF0223C2EF20013357C /* SwiftyVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29BBED223C2EF20013357C /* SwiftyVK.framework */; };
+		9B29BBF1223C2EF20013357C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29BBEE223C2EF20013357C /* RxSwift.framework */; };
+		9B29BBF3223C30880013357C /* VKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29BBF2223C30880013357C /* VKDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +39,14 @@
 		963F709E22328CA20049D85E /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		963F70A1223293670049D85E /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		963F70A2223293670049D85E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		9B29BBDE223C245E0013357C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B29BBDE223C245E0013357C /* LoginVKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVKViewController.swift; sourceTree = "<group>"; };
+		9B29BBE6223C25B90013357C /* LoginVKViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVKViewModel.swift; sourceTree = "<group>"; };
+		9B29BBE8223C25DF0013357C /* LoginVKModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVKModel.swift; sourceTree = "<group>"; };
+		9B29BBEA223C2EDD0013357C /* iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iOS; path = Carthage/Build/iOS; sourceTree = "<group>"; };
+		9B29BBEC223C2EF20013357C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		9B29BBED223C2EF20013357C /* SwiftyVK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyVK.framework; path = Carthage/Build/iOS/SwiftyVK.framework; sourceTree = "<group>"; };
+		9B29BBEE223C2EF20013357C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		9B29BBF2223C30880013357C /* VKDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B29BBEF223C2EF20013357C /* RxCocoa.framework in Frameworks */,
+				9B29BBF0223C2EF20013357C /* SwiftyVK.framework in Frameworks */,
+				9B29BBF1223C2EF20013357C /* RxSwift.framework in Frameworks */,
 				963F70A4223293670049D85E /* Alamofire.framework in Frameworks */,
 				963F70A3223293670049D85E /* ObjectMapper.framework in Frameworks */,
 			);
@@ -79,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				963F707322327EAA0049D85E /* AppDelegate.swift */,
+				9B29BBF2223C30880013357C /* VKDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -123,7 +140,7 @@
 		963F70942232878C0049D85E /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				9B29BBDE223C245E0013357C /* ViewController.swift */,
+				9B29BBE3223C25460013357C /* LoginVK */,
 				963F707722327EAA0049D85E /* Main.storyboard */,
 			);
 			path = PresentationLayer;
@@ -166,10 +183,40 @@
 		963F70A0223293670049D85E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B29BBEC223C2EF20013357C /* RxCocoa.framework */,
+				9B29BBEE223C2EF20013357C /* RxSwift.framework */,
+				9B29BBED223C2EF20013357C /* SwiftyVK.framework */,
+				9B29BBEA223C2EDD0013357C /* iOS */,
 				963F70A2223293670049D85E /* Alamofire.framework */,
 				963F70A1223293670049D85E /* ObjectMapper.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B29BBE3223C25460013357C /* LoginVK */ = {
+			isa = PBXGroup;
+			children = (
+				9B29BBE4223C258B0013357C /* Model */,
+				9B29BBE5223C25960013357C /* ViewModel */,
+				9B29BBDE223C245E0013357C /* LoginVKViewController.swift */,
+			);
+			path = LoginVK;
+			sourceTree = "<group>";
+		};
+		9B29BBE4223C258B0013357C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B29BBE8223C25DF0013357C /* LoginVKModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B29BBE5223C25960013357C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9B29BBE6223C25B90013357C /* LoginVKViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +249,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Владислав Игнатьев";
+				ORGANIZATIONNAME = "Студенты Москвы";
 				TargetAttributes = {
 					963F706F22327EAA0049D85E = {
 						CreatedOnToolsVersion = 10.1;
@@ -268,12 +315,18 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyVK.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyVK.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -286,11 +339,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B29BBDF223C245E0013357C /* ViewController.swift in Sources */,
+				9B29BBDF223C245E0013357C /* LoginVKViewController.swift in Sources */,
 				963F707422327EAA0049D85E /* AppDelegate.swift in Sources */,
 				963F709D223288C70049D85E /* LocalizedStrings.swift in Sources */,
+				9B29BBE7223C25B90013357C /* LoginVKViewModel.swift in Sources */,
+				9B29BBE9223C25DF0013357C /* LoginVKModel.swift in Sources */,
 				963F709F22328CA20049D85E /* Assets.swift in Sources */,
 				963F7098223287D20049D85E /* Collection+IsNotEmpty.swift in Sources */,
+				9B29BBF3223C30880013357C /* VKDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9Z8X7D82Y;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -458,6 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vignatiev.moscowStudents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -467,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9Z8X7D82Y;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -481,6 +540,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vignatiev.moscowStudents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
