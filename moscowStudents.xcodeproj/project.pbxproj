@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		963F707422327EAA0049D85E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F707322327EAA0049D85E /* AppDelegate.swift */; };
-		963F707622327EAA0049D85E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F707522327EAA0049D85E /* OnboardingViewController.swift */; };
 		963F707922327EAA0049D85E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963F707722327EAA0049D85E /* Main.storyboard */; };
 		963F707B22327EAB0049D85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963F707A22327EAB0049D85E /* Assets.xcassets */; };
 		963F707E22327EAB0049D85E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963F707C22327EAB0049D85E /* LaunchScreen.storyboard */; };
@@ -18,12 +17,12 @@
 		963F709F22328CA20049D85E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F709E22328CA20049D85E /* Assets.swift */; };
 		963F70A3223293670049D85E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963F70A1223293670049D85E /* ObjectMapper.framework */; };
 		963F70A4223293670049D85E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963F70A2223293670049D85E /* Alamofire.framework */; };
+		9B29BBDF223C245E0013357C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29BBDE223C245E0013357C /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		963F707022327EAA0049D85E /* moscowStudents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moscowStudents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		963F707322327EAA0049D85E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		963F707522327EAA0049D85E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		963F707822327EAA0049D85E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		963F707A22327EAB0049D85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		963F707D22327EAB0049D85E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		963F709E22328CA20049D85E /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		963F70A1223293670049D85E /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		963F70A2223293670049D85E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		9B29BBDE223C245E0013357C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +123,7 @@
 		963F70942232878C0049D85E /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				963F707522327EAA0049D85E /* OnboardingViewController.swift */,
+				9B29BBDE223C245E0013357C /* ViewController.swift */,
 				963F707722327EAA0049D85E /* Main.storyboard */,
 			);
 			path = PresentationLayer;
@@ -286,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963F707622327EAA0049D85E /* OnboardingViewController.swift in Sources */,
+				9B29BBDF223C245E0013357C /* ViewController.swift in Sources */,
 				963F707422327EAA0049D85E /* AppDelegate.swift in Sources */,
 				963F709D223288C70049D85E /* LocalizedStrings.swift in Sources */,
 				963F709F22328CA20049D85E /* Assets.swift in Sources */,
