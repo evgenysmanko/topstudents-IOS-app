@@ -12,7 +12,7 @@ final class VKDelegate: SwiftyVKDelegate {
   
   static let shared = VKDelegate()
   
-  private let appId = "4994842"
+  private let appId = "6902332"
   private let scopes: Scopes = [.messages, .offline, .friends, .wall,
                                 .photos, .audio, .video, .docs, .market, .email]
   

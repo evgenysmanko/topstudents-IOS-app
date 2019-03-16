@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SwiftyVK
 
 final class LoginVKViewController: UIViewController {
   
@@ -16,13 +17,28 @@ final class LoginVKViewController: UIViewController {
   
   private let viewModel = LoginVKViewModel()
   
+  private let disposeBag = DisposeBag()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    bindWith(viewModel)
+    subscribe()
   }
   
   private func bindWith<V>(_ viewModel: V)
     where V: ViewModelType, V.Input == LoginVKViewModel.Input, V.Output == LoginVKViewModel.Output {
     
+  }
+  
+  private func subscribe() {
+    loginButton.rx.tap.subscribe(onNext: {
+      VK.sessions.default.logIn(onSuccess: { result in
+        print(result)
+      }, onError: { error in
+        print(error.localizedDescription)
+      })
+    }).disposed(by: disposeBag)
   }
   
 }
