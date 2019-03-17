@@ -6,6 +6,7 @@
 //  Copyright © 2019 Студенты Москвы. All rights reserved.
 //
 
+import UIKit
 import SwiftyVK
 
 final class VKDelegate: SwiftyVKDelegate {
@@ -13,13 +14,13 @@ final class VKDelegate: SwiftyVKDelegate {
   static let shared = VKDelegate()
   
   private let appId = "6902332"
-  private let scopes: Scopes = [.messages, .offline, .friends, .wall,
+  private let scopes: Scopes = [.offline, .friends, .wall,
                                 .photos, .audio, .video, .docs, .market, .email]
   
   private init() { }
   
   func configure() {
-    VK.setUp(appId: "", delegate: self)
+    VK.setUp(appId: appId, delegate: self)
   }
   
   func vkNeedsScopes(for sessionId: String) -> Scopes {
@@ -30,9 +31,9 @@ final class VKDelegate: SwiftyVKDelegate {
     // This code works only for simplest cases and one screen applications
     // If you have application with two or more screens, you should use different implementation
     // HINT: google it - get top most UIViewController
-//    if let rootController = UIApplication.shared.keyWindow?.rootViewController {
-//      rootController.present(viewController, animated: true)
-//    }
+    if let rootController = UIApplication.shared.keyWindow?.rootViewController {
+      rootController.present(viewController, animated: true)
+    }
   }
   
   func vkTokenCreated(for sessionId: String, info: [String: String]) {

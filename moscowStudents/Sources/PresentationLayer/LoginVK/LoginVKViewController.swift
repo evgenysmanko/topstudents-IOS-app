@@ -33,12 +33,9 @@ final class LoginVKViewController: UIViewController {
   
   private func subscribe() {
     loginButton.rx.tap.subscribe(onNext: {
-      VK.sessions.default.logIn(onSuccess: { result in
-        print(result)
-      }, onError: { error in
-        print(error.localizedDescription)
-      })
-    }).disposed(by: disposeBag)
+      VKService.authorize()
+    })
+      .disposed(by: disposeBag)
   }
   
 }

@@ -25,6 +25,7 @@
 		9B29BBF1223C2EF20013357C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29BBEE223C2EF20013357C /* RxSwift.framework */; };
 		9B29BBF3223C30880013357C /* VKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29BBF2223C30880013357C /* VKDelegate.swift */; };
 		9B29BBF6223C34150013357C /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29BBF5223C34150013357C /* ViewModelType.swift */; };
+		9B37EE0F223E2240009104C7 /* VKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37EE0E223E2240009104C7 /* VKService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		9B29BBEE223C2EF20013357C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		9B29BBF2223C30880013357C /* VKDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKDelegate.swift; sourceTree = "<group>"; };
 		9B29BBF5223C34150013357C /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		9B37EE0E223E2240009104C7 /* VKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				963F709B223288B60049D85E /* Constants */,
 				963F7096223287BD0049D85E /* Extensions */,
 				9B29BBF7223C39800013357C /* Helpers */,
+				9B37EE0D223E2215009104C7 /* Services */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -228,6 +231,14 @@
 				9B29BBF5223C34150013357C /* ViewModelType.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9B37EE0D223E2215009104C7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9B37EE0E223E2240009104C7 /* VKService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,7 @@
 				963F707422327EAA0049D85E /* AppDelegate.swift in Sources */,
 				963F709D223288C70049D85E /* LocalizedStrings.swift in Sources */,
 				9B29BBE7223C25B90013357C /* LoginVKViewModel.swift in Sources */,
+				9B37EE0F223E2240009104C7 /* VKService.swift in Sources */,
 				9B29BBE9223C25DF0013357C /* LoginVKModel.swift in Sources */,
 				963F709F22328CA20049D85E /* Assets.swift in Sources */,
 				963F7098223287D20049D85E /* Collection+IsNotEmpty.swift in Sources */,
