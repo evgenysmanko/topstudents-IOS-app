@@ -14,6 +14,7 @@ import SwiftyVK
 final class LoginVKViewController: UIViewController {
   
   @IBOutlet private var loginButton: UIButton!
+  @IBOutlet private var getPostsButton: UIButton!
   
   private let viewModel = LoginVKViewModel()
   
@@ -36,6 +37,20 @@ final class LoginVKViewController: UIViewController {
       VKService.authorize()
     })
       .disposed(by: disposeBag)
+    
+    getPostsButton.rx.tap
+      .asDriver()
+      .drive(onNext: {
+        let parameters: Parameters = [Parameter.domain: "studentsmoscow", .count: "10"]
+        VK.API.Wall.get(parameters)
+          .onSuccess { data in
+            print(data)
+            let response = try JSONSerialization.jsonObject(with: data)
+            print(response)
+          }
+          .send()
+        
+      }).disposed(by: disposeBag)
   }
   
 }

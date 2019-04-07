@@ -23,21 +23,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="VK Login"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UT-lI-tQF">
+                                <rect key="frame" x="164.5" y="382" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6UT-lI-tQF" firstAttribute="centerX" secondItem="a2e-rR-K26" secondAttribute="centerX" id="9bb-ex-ahw"/>
                             <constraint firstItem="a2e-rR-K26" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J6g-mk-5Q0"/>
                             <constraint firstItem="a2e-rR-K26" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NXj-DX-Dkc"/>
+                            <constraint firstItem="6UT-lI-tQF" firstAttribute="top" secondItem="a2e-rR-K26" secondAttribute="bottom" constant="32" id="kmH-Fa-3ZV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="getPostsButton" destination="6UT-lI-tQF" id="oTj-ZZ-41V"/>
                         <outlet property="loginButton" destination="a2e-rR-K26" id="wFG-eO-rd3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="27"/>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>
